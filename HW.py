@@ -3,7 +3,7 @@
 # Uz ekrāna tiek parādīts ko ir izvēlējies lietotājs, ko – dators.
 # Tiek parādīts kas ir uzvarējis – dators vai lietotājs, vai neizšķirts.
 
-user_input = int(input('Please enter: Rock - 1,  Paper - 2, Scissors - 3\nUser chose:'))
+user_input = int(input('Please enter: Rock - 1,  Paper - 2, Scissors - 3\nUser choice:'))
 if user_input == 1:
     print('User: Rock')
 elif user_input == 2:
