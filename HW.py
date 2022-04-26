@@ -25,4 +25,4 @@ if user_input == computer_choice:
 elif user_input == 1 and computer_choice == 2 or user_input == 2 and computer_choice == 3 or user_input == 3 and computer_choice == 1:
     print('Computer wins')
 elif user_input == 3 and computer_choice == 2 or user_input == 2 and computer_choice == 1 or user_input == 1 and computer_choice == 3:
-    print('You win')
+    print('User wins')
