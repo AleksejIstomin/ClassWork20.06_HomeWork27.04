@@ -11,7 +11,8 @@ elif user_input == 2:
 elif user_input == 3:
     print('User: Scissors')
 else:
-    print('Wrong number')
+    print('User number is wrong ')
+    exit()
 import random
 computer_choice = random.randint(1, 3)
 if computer_choice == 1:
