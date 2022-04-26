@@ -3,29 +3,26 @@
 # Uz ekrāna tiek parādīts ko ir izvēlējies lietotājs, ko – dators.
 # Tiek parādīts kas ir uzvarējis – dators vai lietotājs, vai neizšķirts.
 
-user_input = int(input('Please enter: Rock - 0, Paper - 1 or Scissors - 2: '))
-rock = 0
-paper = 1
-scissors = 2
-if 0:
-    print(f'Rock')
+user_input = int(input('Please enter: Rock - 1,  Paper - 2, Scissors - 3\n'))
+if user_input == 1:
+    print('User: Rock')
+elif user_input == 2:
+    print('User: Paper')
+elif user_input == 3:
+    print('User: Scissors')
+else:
+    print('Wrong number')
 import random
-computer_choice = random.randint(0, 2)
-print(computer_choice)
-criteria_0 = rock == rock
-criteria_1 = paper == paper
-criteria_2 = scissors == scissors
-criteria_3 = rock > scissors
-criteria_4 = rock < paper
-criteria_5 = paper < scissors
-criteria_6 = paper > rock
-criteria_7 = scissors > paper
-criteria_8 = scissors < rock
-if criteria_0 or criteria_1 or criteria_2:
-    print(user_input, 'vs', computer_choice)
-    # print('No one wins')
-elif criteria_3 or criteria_6 or criteria_7:
-    print(user_input, 'vs', computer_choice)
-    # print('User wins, computer loose')
-elif criteria_4 or criteria_5 or criteria_8:
-    print(user_input, 'vs', computer_choice)
+computer_choice = random.randint(1, 3)
+if computer_choice == 1:
+    print('Computer: Rock')
+elif computer_choice == 2:
+    print('Computer: Paper')
+elif computer_choice == 3:
+    print('Computer: Scissors')
+if user_input == computer_choice:
+    print('Nobody wins')
+elif user_input == 1 and computer_choice == 2 or user_input == 2 and computer_choice == 3 or user_input == 3 and computer_choice == 1:
+    print('Computer wins')
+elif user_input == 3 and computer_choice == 2 or user_input == 2 and computer_choice == 1 or user_input == 1 and computer_choice == 3:
+    print('You win')
